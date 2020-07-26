@@ -1,9 +1,0 @@
-[book]
-authors = ["Léo DURET <leoduret@outlook.com>"]
-language = "fr"
-multilingual = false
-src = "src"
-title = "Projet CMI L3 - A Quick Marker Maker (aqmm)"
-
-[output.html]
-mathjax-support = true
