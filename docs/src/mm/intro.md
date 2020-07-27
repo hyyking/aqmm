@@ -1,0 +1,1 @@
+# Animateur de marché automatisé

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "====> formating documents"
+fish -c "fmtmd **.md"
+
 echo "====> deploying to github"
 
 git worktree add "/tmp/book" "gh-pages"
