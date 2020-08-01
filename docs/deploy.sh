@@ -12,5 +12,5 @@ cp -rp book/* /tmp/book/
 
 cd /tmp/book && \
 	git add -A && \
-	git commit -m "deployed on $(shell date) by ${USER}" && \
+	git commit -m "deployed by ${USER}" && \
 	git push origin gh-pages

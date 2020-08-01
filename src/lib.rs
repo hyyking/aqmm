@@ -1,3 +1,5 @@
+#![feature(maybe_uninit_extra, maybe_uninit_slice_assume_init)]
+
 #[macro_use]
 extern crate log;
 

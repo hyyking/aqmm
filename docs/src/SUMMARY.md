@@ -39,10 +39,10 @@
   - [Ressources I/O](server/io.md)
   - [Marché](server/market.md)
 
-- [Resultat](result/intro.md)
-  - [...]()
-  - [...]()
-  - [...]()
+- [Experience](result/intro.md)
+  - [Mise en place](result/setup.md)
+  - [Stratégies](result/strategies.md)
+  - [Résultats](result/results.md)
 
 ---
 

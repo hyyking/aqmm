@@ -14,6 +14,12 @@ pub struct TcpStream {
     inner: Registration<net::TcpStream>,
 }
 
+impl TcpStream {
+    pub(crate) fn ip(&self) -> std::net::SocketAddr {
+        self.inner.io_ref().peer_addr().unwrap()
+    }
+}
+
 impl TryFrom<net::TcpStream> for TcpStream {
     type Error = io::Error;
 

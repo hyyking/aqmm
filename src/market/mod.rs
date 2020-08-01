@@ -1,42 +1,72 @@
 mod core;
 pub(crate) mod pool;
+mod router;
 pub(crate) mod securities;
 
 use std::io;
 use std::net::ToSocketAddrs;
+use std::rc::Rc;
 use std::sync::Arc;
+use std::thread::{self, JoinHandle};
 
-use crate::protocol::RequestOrder;
+use crate::protocol::{RequestOrder, ResponseOrder};
+
+use futures::channel::oneshot::{self, Receiver};
 
 #[derive(Clone)]
 pub struct Market {
-    inner: Arc<Inner>,
+    inner: Rc<Inner>,
 }
 
 struct Inner {
-    cores: Box<[core::Core]>,
+    router: router::Router<core::Task>,
+    cores: Option<Box<[JoinHandle<()>]>>,
 }
 
 impl Market {
     pub(crate) fn new(
         addr: impl ToSocketAddrs,
-        score: core::Score,
+        score: core::ScoreFn,
         cores: usize,
     ) -> io::Result<Self> {
-        let securities = Arc::new(pool::SecurityPool::new(addr)?);
+        let pool = Arc::new(pool::SecurityPool::new(addr)?);
+        let mut router = router::Router::with_capacity(cores);
+        let c = cores;
 
-        let mut c = Vec::with_capacity(cores);
-        c.resize(cores, core::Core::new(score, securities.clone()));
+        let mut cores = Vec::with_capacity(cores);
+
+        for _ in 0..c {
+            let core = core::Core {
+                score,
+                pool: pool.clone(),
+                receiver: router.receiver(),
+            };
+            cores.push(thread::spawn(|| {
+                futures::executor::block_on(core::run(core))
+            }));
+        }
 
         Ok(Self {
-            inner: Arc::new(Inner {
-                cores: c.into_boxed_slice(),
+            inner: Rc::new(Inner {
+                router,
+                cores: Some(cores.into_boxed_slice()),
             }),
         })
     }
 
-    pub(crate) fn forward(&self, req: RequestOrder) {
-        /* TODO: Put a router in place */
-        self.inner.cores[0].execute(req);
+    pub(crate) fn forward(&self, req: RequestOrder) -> Receiver<ResponseOrder> {
+        let (sender, rcv) = oneshot::channel();
+        self.inner.router.send(core::Task { req, sender });
+        rcv
+    }
+}
+
+impl Drop for Inner {
+    fn drop(&mut self) {
+        if let Some(cores) = self.cores.take() {
+            for h in Vec::from(cores).drain(..) {
+                let _ = h.join();
+            }
+        }
     }
 }

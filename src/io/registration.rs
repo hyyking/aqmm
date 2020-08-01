@@ -62,6 +62,9 @@ impl<E: mio::event::Source> Registration<E> {
     pub(crate) fn io(&mut self) -> &mut E {
         &mut self.io
     }
+    pub(crate) fn io_ref(&self) -> &E {
+        &self.io
+    }
 }
 
 impl<E: mio::event::Source + Unpin> Registration<E> {

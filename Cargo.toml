@@ -26,7 +26,7 @@ log = {version = "0.4.8", features = ["max_level_trace"]}
 mio = {version = "0.7", features = ["tcp", "os-poll"]}
 tokio-util = {version = "0.3", default_features =false, features = ["codec", "compat"]}
 uuid = {version = "0.8", features = ["v5"]}
-futures = {version = "0.3.5", default_features=false, features = ["std", "executor"]}
+futures = {version = "0.3.5", default_features=false, features = ["std", "executor", "async-await"]}
 slab = {version = "0.4.2"}
 async-task = "3"
 pretty_env_logger = "0.4"
