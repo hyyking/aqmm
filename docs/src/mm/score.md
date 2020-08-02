@@ -1,1 +1,0 @@
-# Fonction de Score

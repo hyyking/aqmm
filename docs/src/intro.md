@@ -1,1 +1,0 @@
-# Structure de l'application
