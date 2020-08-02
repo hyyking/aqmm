@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>I/O asynchrone sur système linux - Projet CMI L3 - A Quick Marker Maker (aqmm)</title>
+        <title>Fonction de coût - Projet CMI L3 - A Quick Marker Maker (aqmm)</title>
         
         
 
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><strong aria-hidden="true">1.1.</strong> ...</li><li class="chapter-item expanded "><a href="../mm/score.html"><strong aria-hidden="true">1.2.</strong> Fonction de Score</a></li><li class="chapter-item expanded "><strong aria-hidden="true">1.3.</strong> ...</li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> Future et Stream en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="chapter-item expanded "><a href="../async/io.html" class="active"><strong aria-hidden="true">2.3.</strong> I/O asynchrone sur système linux</a></li></ol></li><li class="chapter-item expanded "><strong aria-hidden="true">3.</strong> ...</li><li><ol class="section"><li class="chapter-item expanded "><strong aria-hidden="true">3.1.</strong> ...</li><li class="chapter-item expanded "><strong aria-hidden="true">3.2.</strong> ...</li><li class="chapter-item expanded "><strong aria-hidden="true">3.3.</strong> ...</li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../intro.html"><strong aria-hidden="true">4.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">4.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">4.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">4.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">5.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">5.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">5.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">5.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">6.</strong> Resultat</a></li><li><ol class="section"><li class="chapter-item expanded "><strong aria-hidden="true">6.1.</strong> ...</li><li class="chapter-item expanded "><strong aria-hidden="true">6.2.</strong> ...</li><li class="chapter-item expanded "><strong aria-hidden="true">6.3.</strong> ...</li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html" class="active"><strong aria-hidden="true">1.1.</strong> Fonction de coût</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -162,20 +162,66 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#io-asynchrone-sur-système-linux" id="io-asynchrone-sur-système-linux">I/O asynchrone sur système linux</a></h1>
+                        <h1><a class="header" href="#fonction-de-coût" id="fonction-de-coût">Fonction de coût</a></h1>
+<p>Le but des anmateurs automatisés est de determiner un prix juste en utilisant les informations des
+agents sur le marché, lui meme étant non-informé.</p>
+<h2><a class="header" href="#règle-de-score-de-marché" id="règle-de-score-de-marché">Règle de score de marché</a></h2>
+<p>Tout d'abord nous definissons une règle de score. Considerons deux variables aléatoires \(Y: \Omega
+\mapsto X\) et \(G: \Omega \mapsto Z\) ou respectivement \(Y\) et \(G\) sont les probabilités
+visées par l'estimation et les probabilité générés par l'estimation. Une fonction de score est
+définit par \(S: Y \times G \mapsto \mathbb{R}\). Autrement dit il s'agit d'une fonction
+mathématique associant à un ensemble de probabilités estimés un nombre que l'on peut interpreter
+comme la &quot;justesse&quot; de l'approximation. On considère que le point qui minimise la fonction de score
+est celui ou les probabilités se rapproche le de l'evennement réel.</p>
+<p>Avec une règle de score, les agent rapportent leurs probabilités pour chaque evennement et recoivent
+un paiement selon chaque réalisation. Une règle de score de marché est une règle de score ou tout le
+monde peut changer ses choix à chaque instant et recevoir un paiement dependant du dernier paiement.
+Le cout induit par la règle de score de marché est celui du dernier rapport comparé au premier. Dans
+<a href="https://mason.gmu.edu/%7Erhanson/mktscore.pdf">Hanson (2002)</a> l'auteur montre que toute fonction de
+score rapportant des probabilités honnètes peut être utilisé comme fonction de score de marché.</p>
+<h2><a class="header" href="#animateurs-de-marché-à-fonction-de-score" id="animateurs-de-marché-à-fonction-de-score">Animateurs de marché à fonction de score</a></h2>
+<p>Nous decrivons désormais le déroulement des échanges avec un animateur de marché automatique à
+fonction de score. Ce dernier commence avec un état initiale (généralement \(\vec{0}\)). Les
+agents interagissent avec l'animateur en modifiant son état interne de \(x\) à \(x'\) pour un
+prix de \(C(x') - C(x)\). Par exemple pour des evennement \(\omega_1\) et \(\omega_2\) et un
+état initial de \(\{0, 0\}\) si un agent souhaite acheter deux titres associés à \(\omega_2\)
+il devra d'affranchir de \(C(\{0, 0 + 2\}) - C(\{0, 0\})\). Ainsi on peut qualifier le prix
+d'un actif comme le gradient de la fonction de score par rapport à cet actif.</p>
+<h2><a class="header" href="#propriétés-désirables-des-fonctions-de-score-de-marché" id="propriétés-désirables-des-fonctions-de-score-de-marché">Propriétés désirables des fonctions de score de marché</a></h2>
+<h4><a class="header" href="#1-monotonie" id="1-monotonie">1. Monotonie</a></h4>
+<p>\[\forall x,y \space s.t. \space x_i \le y_i, \space C(x) \le C(y)\]</p>
+<p>Interprétation: le prix marginal d'un ordre ne décroit jamais, empechant d'acheter des combinaisons
+à prix 0 en faisant des gains.</p>
+<h4><a class="header" href="#2-convexité" id="2-convexité">2. Convexité</a></h4>
+<p>\[\forall x,y \space and \space \lambda \in [0, 1] \] \[C(\lambda x + (1-\lambda) y) \le \lambda
+C(x) + (1 - \lambda) C(y) \]</p>
+<p>Interprétation: une annonce diversifié donne un score plus faible que deux annonces séparés. Ainsi
+cela incite à la diversification des portfeuilles.</p>
+<h4><a class="header" href="#3-perte-borné" id="3-perte-borné">3. Perte borné</a></h4>
+<p>\[\sup_x[\max_i(x_i) - C(x)] \lt \infty \]</p>
+<p>Interprétation: permet d'assurer une perte borné peu importe les actions des agents et les états
+réalisés.</p>
+<h4><a class="header" href="#4-invariance-à-la-translation" id="4-invariance-à-la-translation">4. Invariance à la translation</a></h4>
+<p>\[\forall \vec{x},\alpha \] \[C(x + \vec{1} \alpha) = C(x) + \alpha \]</p>
+<p>Interprétation: Si on paris \(\alpha\) unités sur tous les états on paie \(\alpha\) unités.</p>
+<h4><a class="header" href="#5-homogénéité-positive" id="5-homogénéité-positive">5. Homogénéité positive</a></h4>
+<p>\[\forall \vec{x},\gamma \gt 0\] \[C(x \gamma) = C(x) \gamma \]</p>
+<p>Interprétation: Si on double son paris on paie double.</p>
+<h2><a class="header" href="#exemple-de-fonction-de-score" id="exemple-de-fonction-de-score">Exemple de fonction de score</a></h2>
+<p>...</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../async/executor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../mm/intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../intro.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../mm/ghpm.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -187,13 +233,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../async/executor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../mm/intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../intro.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../mm/ghpm.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -201,21 +247,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
