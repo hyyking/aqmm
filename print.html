@@ -94,7 +94,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li></ol></li><li class="chapter-item expanded "><a href="app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -185,8 +185,8 @@ automatisé, il s'agit d'un intermediaire contrepartiste toujours disponible à 
 marché entièrement liquide.</p>
 <p>Ce projet présente une implémentation d'un animateur de marché automatisé. Dans une première partie
 nous nous interesserons aux fondements théoriques des animateurs de marchés et à la programmation
-asynchrone. Tandis que dans un second temps nous présenterons l'architecture, l'implémentation et
-les résultats de l'application.</p>
+asynchrone. Tandis que dans un second temps nous présenterons l'architecture et l'implémentation du
+serveur de marché.</p>
 <h1><a class="header" href="#animateur-de-marché-automatisé" id="animateur-de-marché-automatisé">Animateur de marché automatisé</a></h1>
 <p>Les animateurs de marché automatisés sont des intermédiaires contrepartistes toujours disponibles à
 l'échange suivant une procédure automatique de formation du prix d'achat et de vente (qui peuvent
@@ -227,7 +227,7 @@ deux titres associés à \(\omega_2\) il devra d'affranchir de \(C(\{0, 0 + 2\})
 rapport à cet actif.</p>
 <h2><a class="header" href="#propriétés-désirables-des-fonctions-de-score-de-marché" id="propriétés-désirables-des-fonctions-de-score-de-marché">Propriétés désirables des fonctions de score de marché</a></h2>
 <p>Il existe un ensemble de propriété désirables pour ces règle de score, en effet on aimerait limiter
-la perte d'un animateur de marché et proposer des prix cohérents. On liste cinqs propriétés
+la perte d'un animateur de marché et proposer des prix cohérents. On liste cinq propriétés
 désirables:</p>
 <h4><a class="header" href="#1-monotonie" id="1-monotonie">1. Monotonie</a></h4>
 <p>\[\forall x,y \space s.t. \space x_i \le y_i, \space C(x) \le C(y)\]</p>
@@ -336,7 +336,7 @@ opportunités d'arbitrage mais accentue les effets marginaux sur des marchés &q
 grand nombre d'actifs disponibles.</p>
 <p>Cet effet à eu un impact négatif sur l'experience, notamment sur la fin, car les agents avait peur
 de faire des mouvements plus gros qui auraient pu faire basculer la valeur de leur portefeuille.
-D'après une interveiw vers la fin de l'expérience une des personnes les mieux placés a essayé de
+D'après une interview, vers la fin de l'expérience une des personnes les mieux placés a essayé de
 limiter ses placement afin de justement eviter de former des pics liés à cet insensibilité à la
 liquidité.</p>
 <p>Une solution à ce problème est exploré dans le papier <em>A Practical Liquidity-Sensitive Automated
@@ -597,8 +597,8 @@ pour chacune.</p>
 <h1><a class="header" href="#structure-de-lapplication" id="structure-de-lapplication">Structure de l'application</a></h1>
 <p>Pour ce projet j'ai décidé de construire un serveur et des clients afin de faire une simulation d'un
 marché utilisant un animateur de marché automatique. Dans cette partie j'expliquerais le protocol de
-communication utilisé entre le serveur et les clients. Ensuite je présenterais en détail la
-structure du serveur et des clients pour l'experience.</p>
+communication utilisé entre le serveur et les clients, enfin je présenterais en détail la
+structure du serveur.</p>
 <h1><a class="header" href="#protocol" id="protocol">Protocol</a></h1>
 <p>La communication entre le serveur et les client se fait par message rpc encodé en protobuf, dans
 cette partie nous verrons les détails.</p>
@@ -639,7 +639,7 @@ programmation car ils auront la description des éléments pour désérialiser l
 </code></pre>
 <p>et en java:</p>
 <pre><code class="language-java ignore">public class Ordre {
-  int qt;
+  long qt;
   double prix;
 }
 </code></pre>
@@ -798,10 +798,10 @@ des ressources I/O et d'emettre des notifications sur les connections ayant du t
 évènements sont ensuite transferé à des entrées contenant les <code>std::task::Waker</code> des streams de
 message des clients ces messages sont ensuite décodés et une réponse est envoyé suviant le protocole
 décrit dans la partie précédente.</p>
-<h2><a class="header" href="#networking" id="networking">Networking</a></h2>
+<h2><a class="header" href="#réseau" id="réseau">Réseau</a></h2>
 <p>Le module <code>src/net</code> contient tous les éléments nécéssaire au maintient et à l'utilisation des
 connections.</p>
-<h3><a class="header" href="#tcpsream" id="tcpsream">TcpSream</a></h3>
+<h3><a class="header" href="#stream-tcp-asynchrone" id="stream-tcp-asynchrone">Stream Tcp Asynchrone</a></h3>
 <p>Le driver de ressources I/O permet de savoir quand une connection est en mesure d'être écrite/lu. De
 cette manière le driver peut reveiller les <code>Waker</code> associés. Il manque donc deux <em>trait</em> comme
 <code>std::future::Future</code> mais pour les actions de lecture et d'ecriture d'un flux de donnée. Le
@@ -810,23 +810,24 @@ définit de la même facon <code>futures::io::AsyncRead</code> et <code>futures:
 I/O nous pouvons construire une abstraction par dessus un TcpStream synchrone qui implémente
 <code>AsyncRead + AsyncWrite</code></p>
 <h3><a class="header" href="#codec" id="codec">Codec</a></h3>
-<p>Les codecs sont construits sur les <em>traits</em> <code>tokio_util::codec::Encoder</code> et
+<p>Les codecs sont des structures construites sur les <em>traits</em> <code>tokio_util::codec::Encoder</code> et
 <code>tokio_util::codec::Decoder</code> trouvé dans la librairie <a href="https://docs.rs/tokio_codec"><code>tokio_util</code></a>.
-Le module expose un codec client, qui encode des requêtes et décode des réponses ainsi qu'un codec
-serveur qui encode les réponses et décode les requètes.</p>
+Il permettent de lier l'utilisation de zone mémoire tampon avec l'encodage et le décodage de
+messages. Le module expose un codec client, qui encode des requêtes et décode des réponses ainsi
+qu'un codec serveur qui encode les réponses et décode les requètes.</p>
 <p>L'interet d'exposer ces codec est de pouvoir utiliser la structure <code>tokio_util::codec::Framed</code>
 exposé par la même libraire. La structure permet de créer un stream et un &quot;sink&quot; depuis un codec
 (<code>Encoder + Decoder</code>) et une structure pouvant être lu/écrite de manière asynchrone
 (<code>AsyncRead + AsyncWrite</code>). Le stream renvois ainsi les objets décodés et le &quot;sink&quot; permet d'envoyer
 des objets qui seront encodés puis envoyés sur la connection.</p>
-<h2><a class="header" href="#market" id="market">Market</a></h2>
+<h2><a class="header" href="#marché" id="marché">Marché</a></h2>
 <p>Le marché est composé de plusieurs éléments. La structure principale qui sert de pointeur vers un
 état partagé qui comprend une liste des coeurs du marché et un accès au routeur d'ordres. Tous les
 coeurs ont également un pointeur vers un une structure partagé contenant le compte de chaque titres
 ainsi qu'un accès au multicast.</p>
 <p>Le but de cette structure est de servire d'interface partagé entre tous les clients pour envoyer des
 ordres en contrepartie d'un future sur le résultat de cet ordre.</p>
-<h3><a class="header" href="#routercoeurs" id="routercoeurs">Router/Coeurs</a></h3>
+<h3><a class="header" href="#routeur-et-coeurs-du-marché" id="routeur-et-coeurs-du-marché">Routeur et coeurs du marché</a></h3>
 <p>Le router d'ordre est un structure faisant part du marché son but est d'envoyer les ordres sur les
 différents coeurs. Les stratégies de routage des ordres peuvent être plus ou moins complexe. En
 effet, le but des coeurs est d'éxécuter des ordres cependant on pourrait se retrouver dans une
@@ -838,13 +839,13 @@ sortis des router implémente égalment le <em>trait</em> <code>futures::stream:
 coeurs ne soient actifs que lorsque des ordres arrivent (et ainsi les notifiants).</p>
 <p>Le coeur du marché est lancé sur un processus différent, il s'agit d'une structure asynchrone qui
 attend les ordres du router. Une fois l'ordre reçu il tente attend de pouvoir avoir un accès
-exclusifs aux quantités actuelles de l'animateur de marché. Une fois les quantités acquises il
-calcule le score pour les anciennes et le score pour les nouvelles après avoir éxécuté tous les
-ordres determinant le prix de la transaction. Une fois le verrous des quantités levé il tente de
-partager les nouvelles quantités, cette action échouera si les quantités ont été partagé trop
-récemment.</p>
-<h3><a class="header" href="#securitiespool" id="securitiespool">Securities/Pool</a></h3>
-<p>Le fichier <code>src/market/securities.rs</code> permet d'editer les titres avant la compilation et contient
+exclusifs (via un <a href="https://en.wikipedia.org/wiki/Mutual_exclusion">Mutex</a>) aux quantités actuelles
+de l'animateur de marché. Une fois les quantités acquises il calcule le score pour les anciennes et
+le score pour les nouvelles après avoir éxécuté tous les ordres determinant le prix de la
+transaction. Une fois le verrous des quantités levé il tente de partager les nouvelles quantités,
+cette action échouera si les quantités ont été partagé trop récemment.</p>
+<h3><a class="header" href="#titres" id="titres">Titres</a></h3>
+<p>Le fichier <code>src/market/securities.rs</code> permet d'éditer les titres avant la compilation et contient
 également des fonctions y facilitant l'accès. Le fichier définit également un autre type
 <code>Securities</code> dont la description est du texte statique car il est, pour le moment, impossible de
 créer statiquement (comprendre lors de la compilation) un pointeur de texte <code>String</code> requis par
@@ -864,24 +865,30 @@ prost pour les entrées type string en protobuf.</p>
     },
 ];
 </code></pre>
-<h1><a class="header" href="#clients" id="clients">Clients</a></h1>
-<h1><a class="header" href="#serveur-1" id="serveur-1">Serveur</a></h1>
-<h1><a class="header" href="#executeur-à-un-thread" id="executeur-à-un-thread">Executeur à un thread</a></h1>
-<h1><a class="header" href="#ressources-io" id="ressources-io">Ressources I/O</a></h1>
-<h1><a class="header" href="#marché" id="marché">Marché</a></h1>
-<h1><a class="header" href="#resultat" id="resultat">Resultat</a></h1>
-<h1><a class="header" href="#mise-en-place-1" id="mise-en-place-1">Mise en place</a></h1>
-<h1><a class="header" href="#stratégies" id="stratégies">Stratégies</a></h1>
-<h1><a class="header" href="#résultats-1" id="résultats-1">Résultats</a></h1>
 <h1><a class="header" href="#conclusion" id="conclusion">Conclusion</a></h1>
+<p>Pour conclure nous avons pu voir l'utilisation des règles de score comme animateur de marché
+automatisés permettant ainsi de regler le problème de liquidité des marchés fins. Nous avons
+également parlé de l'experience du marché de l'information du centre Gates Hillman en tirant des
+conclusions sur l'utilisation d'une règle de score de marché logarithmique et les incitaions qu'elle
+a crée chez les agents. Cette base théorique à permis de construire un marché totalement asynchrone
+en language Rust qui a précédé une experience pratique en utilisant des agents autonomes.</p>
+<p>Une suite à ce projet serait d'experimenter le serveur dans un cadre pratique avec des agents réels.</p>
 <h1><a class="header" href="#documentation" id="documentation">Documentation</a></h1>
 <ul>
-<li>A Bayesian Market Maker</li>
-<li>A Practical Liquidity-Sensitive Automated Market Maker</li>
-<li>Algorithmic Game Theory</li>
-<li>Automated Market Making: Theory and Practice</li>
-<li>Logarithmic Market Scoring Rules for Modular Combinatorial Information Aggregation</li>
-<li>Multi-outcome and Multidimensional Market Scoring Rules</li>
+<li>A Practical Liquidity-Sensitive Automated Market Maker - A. Othman, T. Sandholm, D. Pennock, D.
+Reeves (2010)</li>
+<li>Automated Market Making: Theory and Practice - A. Othman (2012)</li>
+<li>Betting on Permutations - Y. Chen, D. Pennock (2005)</li>
+<li>Complexity of Market Making - Y.Chen, D. Pennock (2008)</li>
+<li>Computational Aspects of Prediction Markets - D. Pennock, R. Sami</li>
+<li>Gates Hillman Prediction Market - A. Othman, T. Sandholm (2010)</li>
+<li>Logarithmic Market Scoring Rules for Modular Combinatorial Information Aggregation - R. Hanson
+(2002)</li>
+<li>Market vs Pool - Y. Chen, D. Pennock (2005)</li>
+<li>Multi-outcome and Multidimensional Market Scoring Rules - L. Fortnow, R. Sami (2012)</li>
+<li>Prediction Markets: Economics, Computation, and Mechanism Design - Y. Chen (2007)</li>
+<li>The Hidden Beauty of the Quadratic Market Scoring Rule: A Uniform Liquidity Market Maker, with
+Variations - M. Abramowicz (2007)</li>
 </ul>
 
                     </main>
