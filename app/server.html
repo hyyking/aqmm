@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr" class="sidebar-visible no-js coal">
+<html lang="fr" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -47,7 +47,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -73,7 +73,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('coal')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Fonction de coût</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html" class="active"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html" class="active"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -111,9 +111,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -167,7 +167,7 @@
 modules le premier étant celui des ressources Input/Output c'est à dire concernant les abstractions
 liés aux notifications système. Un deuxième module connexe au premier fait la liaison entre les
 entrée de notification systeme et les connections TCP permettant à ces dernières d'être entièrement
-asynchrones. Un dernier est lié au marché avec la liste des titres et les modules d'execution
+asynchrones. Un dernier est lié au marché avec la liste des titres et les modules d'éxécution
 d'ordre.</p>
 <p>Structure des éléments de l'application (dossiers et fichiers non pertinents omis):</p>
 <pre><code>.
@@ -193,27 +193,27 @@ d'ordre.</p>
 │   │       ├── context.rs
 │   │       └── mod.rs
 │   ├── server.rs
-│   └── bin			-&gt; binaires executables
+│   └── bin			-&gt; binaires éxécutables
 ├── proto
 │   └── aqmm.proto		-&gt; protocol en protobuf
 └── ...
 </code></pre>
-<h2><a class="header" href="#executeur-et-io" id="executeur-et-io">Executeur et I/O</a></h2>
+<h2><a class="header" href="#exécuteur-et-io" id="exécuteur-et-io">Exécuteur et I/O</a></h2>
 <p>La structure du serveur (dans le fichier <code>src/server.rs</code>) est composé d'un &quot;driver&quot; pour les
 ressources I/O liés aux connections arrivant. Le but du serveur est d'écouter les connections
-arrivantes et pour chaque connection d'executer un client qui prend la forme d'un future. A chaque
+arrivantes et pour chaque connection d'éxécuter un client qui prend la forme d'un future. A chaque
 client est associé une connection ainsi qu'une session. Afin de determiner quels clients ont une
 action de prête le serveur utilise la librairie <a href="https://docs.rs/mio"><code>mio</code></a> qui permet d'associer
 des ressources I/O et d'emettre des notifications sur les connections ayant du travail. Les
-evennements sont ensuite transferé à des entrées contenant les <code>std::task::Waker</code> des streams de
+évènements sont ensuite transferé à des entrées contenant les <code>std::task::Waker</code> des streams de
 message des clients ces messages sont ensuite décodés et une réponse est envoyé suviant le protocole
 décrit dans la partie précédente.</p>
 <h2><a class="header" href="#networking" id="networking">Networking</a></h2>
-<p>Le module <code>src/net</code> contient tous les elements nécéssaire au maintient et à l'utilisation des
+<p>Le module <code>src/net</code> contient tous les éléments nécéssaire au maintient et à l'utilisation des
 connections.</p>
 <h3><a class="header" href="#tcpsream" id="tcpsream">TcpSream</a></h3>
 <p>Le driver de ressources I/O permet de savoir quand une connection est en mesure d'être écrite/lu. De
-cette manière le driver peut reveiller les <code>Waker</code> associés. Il manque seulement un <em>trait</em> comme
+cette manière le driver peut reveiller les <code>Waker</code> associés. Il manque donc deux <em>trait</em> comme
 <code>std::future::Future</code> mais pour les actions de lecture et d'ecriture d'un flux de donnée. Le
 language expose les <em>traits</em> synchrone <code>std::io::Read</code> et <code>std::io::Write</code>. La libraire <code>futures</code>
 définit de la même facon <code>futures::io::AsyncRead</code> et <code>futures::io::AsyncWrite</code>. Ainsi avec le driver
@@ -222,10 +222,10 @@ I/O nous pouvons construire une abstraction par dessus un TcpStream synchrone qu
 <h3><a class="header" href="#codec" id="codec">Codec</a></h3>
 <p>Les codecs sont construits sur les <em>traits</em> <code>tokio_util::codec::Encoder</code> et
 <code>tokio_util::codec::Decoder</code> trouvé dans la librairie <a href="https://docs.rs/tokio_codec"><code>tokio_util</code></a>.
-Le module expose un codec client, qui encode des requêtes et décode des responses ainsi qu'un codec
-serveur qui encode les réponses et décode les requetes.</p>
+Le module expose un codec client, qui encode des requêtes et décode des réponses ainsi qu'un codec
+serveur qui encode les réponses et décode les requètes.</p>
 <p>L'interet d'exposer ces codec est de pouvoir utiliser la structure <code>tokio_util::codec::Framed</code>
-exposé par la meme libraire. La structure permet de créer un stream et un &quot;sink&quot; depuis un codec
+exposé par la même libraire. La structure permet de créer un stream et un &quot;sink&quot; depuis un codec
 (<code>Encoder + Decoder</code>) et une structure pouvant être lu/écrite de manière asynchrone
 (<code>AsyncRead + AsyncWrite</code>). Le stream renvois ainsi les objets décodés et le &quot;sink&quot; permet d'envoyer
 des objets qui seront encodés puis envoyés sur la connection.</p>
@@ -235,11 +235,11 @@ des objets qui seront encodés puis envoyés sur la connection.</p>
 coeurs ont également un pointeur vers un une structure partagé contenant le compte de chaque titres
 ainsi qu'un accès au multicast.</p>
 <p>Le but de cette structure est de servire d'interface partagé entre tous les clients pour envoyer des
-ordres en contrepartie d'un future sur le resultat de cet ordre.</p>
+ordres en contrepartie d'un future sur le résultat de cet ordre.</p>
 <h3><a class="header" href="#routercoeurs" id="routercoeurs">Router/Coeurs</a></h3>
 <p>Le router d'ordre est un structure faisant part du marché son but est d'envoyer les ordres sur les
 différents coeurs. Les stratégies de routage des ordres peuvent être plus ou moins complexe. En
-effet, Les le but des coeurs est d'executer des ordres cependant on pourrait se retrouver dans une
+effet, le but des coeurs est d'éxécuter des ordres cependant on pourrait se retrouver dans une
 situation ou un coeur recoit tous les ordres tandis que les autres ne font rien gachant ainsi du
 temps de processeur. Par exemple, on pourrait imaginer une stratégie ou les ordres sont triés et en
 fonction des titres visés sont envoyé sur un coeurs différent. Dans le cadre de ce projet le router
@@ -248,20 +248,18 @@ sortis des router implémente égalment le <em>trait</em> <code>futures::stream:
 coeurs ne soient actifs que lorsque des ordres arrivent (et ainsi les notifiants).</p>
 <p>Le coeur du marché est lancé sur un processus différent, il s'agit d'une structure asynchrone qui
 attend les ordres du router. Une fois l'ordre reçu il tente attend de pouvoir avoir un accès
-exclusifs aux quantités du market maker. Une fois les quantités acquises il calcule le score pour
-les anciennes et le score pour les nouvelles après avoir executé tous les ordres determinant le prix
-de la transaction. Une fois le verrous des quantités levé il tente de partager les nouvelles
-quantités.</p>
+exclusifs aux quantités actuelles de l'animateur de marché. Une fois les quantités acquises il
+calcule le score pour les anciennes et le score pour les nouvelles après avoir éxécuté tous les
+ordres determinant le prix de la transaction. Une fois le verrous des quantités levé il tente de
+partager les nouvelles quantités, cette action échouera si les quantités ont été partagé trop
+récemment.</p>
 <h3><a class="header" href="#securitiespool" id="securitiespool">Securities/Pool</a></h3>
 <p>Le fichier <code>src/market/securities.rs</code> permet d'editer les titres avant la compilation et contient
 également des fonctions y facilitant l'accès. Le fichier définit également un autre type
 <code>Securities</code> dont la description est du texte statique car il est, pour le moment, impossible de
-créer statiquement (comprendre lors de la compilation) un pointeur de type <code>String</code> requis par prost
-pour les entrés type string en protobuf.</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>const SECURITIES: &amp;'static [Security] = &amp;[
+créer statiquement (comprendre lors de la compilation) un pointeur de texte <code>String</code> requis par
+prost pour les entrées type string en protobuf.</p>
+<pre><code class="language-rust ignore">const SECURITIES: &amp;'static [Security] = &amp;[
     Security {
         security_id: 0,
         description: &quot;first security&quot;,
@@ -274,9 +272,8 @@ pour les entrés type string en protobuf.</p>
         security_id: 2,
         description: &quot;third security&quot;,
     },
-];}
-<span class="boring">}
-</span></code></pre></pre>
+];
+</code></pre>
 
                     </main>
 

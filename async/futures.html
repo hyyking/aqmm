@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr" class="sidebar-visible no-js coal">
+<html lang="fr" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -47,7 +47,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -73,7 +73,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('coal')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Fonction de coût</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html" class="active"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html" class="active"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -111,9 +111,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -164,46 +164,38 @@
                     <main>
                         <h1><a class="header" href="#future-et-stream-en-language-rust" id="future-et-stream-en-language-rust">Future et Stream en language Rust</a></h1>
 <p>Le language Rust n'est pas un language orienté objet comme les autres, en effet il n'existe pas
-d'objets à proprement parler les structures peuvent avoir des methodes associés uniques et apporté
-par un <em>trait</em> (penser trait de charactère <code>content -&gt; sourire()</code>). Ainsi pour définir les calculs
-asynchrones le language fournit le <em>trait</em> <code>std::future::Future</code>, pour les itérateurs asynchrones
-(<code>futures::stream::Stream</code>) le <em>trait</em> se trouve dans la librarie
+d'objets à proprement parler. Cependant, les structures peuvent avoir des methodes associés uniques
+et d'autres apportés par un <em>trait</em> (penser trait de charactère <code>content -&gt; sourire()</code>). Ainsi pour
+définir les calculs asynchrones le language fournit le <em>trait</em> <code>std::future::Future</code> et pour les
+itérateurs asynchrones <code>futures::stream::Stream</code> qui se trouve dans la librarie
 <a href="https://docs.rs/futures/0.3.5/futures/index.html">futures</a> maintenu par les developpeurs du
 language en attendant d'être stabilisé.</p>
 <p>Dans cette partie nous verrons comment est définit le <em>trait</em> <code>std::future::Future</code>, en quoi il
 définit un calcul asynchrone et comment il est utilisé en pratique. Enfin nous étendrons ça aux
-itérateurs asynchrones.</p>
+itérateurs asynchrones avec le <em>trait</em> <code>futures::stream::Stream</code>.</p>
 <h2><a class="header" href="#stdfuturefuture" id="stdfuturefuture"><code>std::future::Future</code></a></h2>
 <h3><a class="header" href="#définition" id="définition">Définition</a></h3>
 <p>Le <em>trait</em> est définit de la façon suivante.</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>pub trait Future {
+<pre><code class="language-rust ignore">pub trait Future {
     type Output;
     fn poll(self: Pin&lt;&amp;mut Self&gt;, cx: &amp;mut Context) -&gt; Poll&lt;Self::Output&gt;;
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>Lorsque nous décomposons nous voyons qu'il y a un type associé <code>type Output;</code> qui correspond au type
-de l'élément retourné par le future. Concernant la méthode, elle retourne <code>Poll&lt;T&gt;</code> un <em>enum</em>
-pouvant prendre deux formes</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>pub enum Poll&lt;T&gt; {
+de l'élément retourné par le future. Concernant la méthode, elle retourne <code>Poll&lt;T&gt;</code> un <em>enum</em>, avec
+un paramètre générique <code>T</code>, pouvant prendre deux formes:</p>
+<pre><code class="language-rust ignore">pub enum Poll&lt;T&gt; {
 	Ready(T),
 	Pending
 }
-<span class="boring">}
-</span></code></pre></pre>
-<p>Ainsi lorsque que la fonction retourne <code>Poll::Ready(10)</code> on dit que le future est terminé car il a
+</code></pre>
+<p>Ainsi, lorsque que la fonction retourne <code>Poll::Ready(10)</code> on dit que le future est terminé car il a
 produit une valeur. Tandis que lorsque <code>Poll::Pending</code> est renvoyé cela veut dire qu'il n'est pas
-encore terminé et il doit être reveillé par un evennement qui indique qu'il va peut-être renvoyer
-<code>Poll::Ready(_)</code>. Pour que le future soit reveillé il recoit une reference (<code>&amp;mut</code>) à un <code>Context</code>,
-dont il peut recuperer le <code>Waker</code> associé et le stocker quelque part pour qu'un autre processus
-puisse le reveiller.</p>
-<p>PS: Nous ne nous attarderons pas sur <code>Pin&lt;&amp;mut Self&gt;</code> qui assure seulement que le futures n'est pas
+encore terminé et il doit être reveillé par un évènement qui indique qu'il va peut-être renvoyer
+<code>Poll::Ready(_)</code>. Pour que le future soit reveillé il reçoit une référence (<code>&amp;mut</code>) à un <code>Context</code>,
+dont il peut recuperer le <code>Waker</code>, structure qui permet de reveiller la tache associé, et le stocke
+quelque part pour qu'un autre processus puisse le reveiller.</p>
+<p>PS: Nous ne nous attarderons pas sur <code>Pin&lt;&amp;mut Self&gt;</code> qui assure seulement que le future n'est pas
 remplacé pendant un appel à <code>poll</code>.</p>
 <h3><a class="header" href="#calcul" id="calcul">Calcul</a></h3>
 <p>En général les futures utilisés en rust sont issues de la combinaison de plusieurs futures. Avant
@@ -213,22 +205,22 @@ structures dites combinatoires.</p>
 <h5><a class="header" href="#composition-sequentielle" id="composition-sequentielle">Composition sequentielle:</a></h5>
 <ul>
 <li><em>Ex</em>: <code>f.and_then(|output_future_precedent| nouveau_future(output_future_precedent))</code></li>
-<li><em>Implication</em>: le future <code>f</code> est executé jusqu'au bout et un nouveau future est constuit du
+<li><em>Implication</em>: lorsque future <code>f</code> est executé jusqu'au bout, un nouveau future est construit du
 resultat du précédent</li>
 </ul>
-<h5><a class="header" href="#map" id="map">Map</a></h5>
+<h5><a class="header" href="#changement-de-type" id="changement-de-type">Changement de type:</a></h5>
 <ul>
 <li><em>Ex</em>: <code>f.map(|output_future_precedent| nouveau_type(output_future_precedent))</code></li>
-<li><em>Implication</em>: l'<code>Output</code> de type O du future <code>f</code> est passé dans une fonction lui donnant le type
-R, le nouveau type de <code>Output</code> est R</li>
+<li><em>Implication</em>: le type <code>Output</code> du future <code>f</code> est passé dans une fonction lui donnant un nouveau
+type (modifiant ainsi sa valeur à la fin de l'éxécution).</li>
 </ul>
-<h5><a class="header" href="#join" id="join">Join</a></h5>
+<h5><a class="header" href="#jointure" id="jointure">Jointure:</a></h5>
 <ul>
 <li><em>Ex</em>: <code>f.join(g)</code></li>
-<li><em>Implication</em>: les futures <code>f</code> et <code>g</code> sont executé parallement et le nouveau future se termine
+<li><em>Implication</em>: les futures <code>f</code> et <code>g</code> sont éxécuté parallement et le nouveau future se termine
 lorsque les deux sont terminés.</li>
 </ul>
-<h5><a class="header" href="#select" id="select">Select</a></h5>
+<h5><a class="header" href="#selection" id="selection">Selection:</a></h5>
 <ul>
 <li><em>Ex</em>: <code>f.select(g)</code></li>
 <li><em>Implication</em>: les futures <code>f</code> et <code>g</code> sont executé parallement et le nouveau future se termine
@@ -236,15 +228,13 @@ lorsqu'un des deux est terminé.</li>
 </ul>
 <h4><a class="header" href="#mise-à-jour-139" id="mise-à-jour-139">Mise à jour 1.39</a></h4>
 <p>Depuis la mise à jour 1.39.0 la syntaxe <code>async/await</code> à été stabilisé permettant d'utiliser les
-futures comme du code classique. Pour recuperer le resultat d'un future il faut symplement l'<code>await</code>
-dans une fonction <code>async</code>hrone.</p>
+futures comme du code classique. Pour recuperer le resultat d'un future il faut symplement <code>await</code>,
+ce qui execute le future, dans une fonction <code>async</code>hrone, qui indique elle meme etre un future (nous
+reviendrons sur la récupération du résultat d'un future dans la partie suivante).</p>
 <p>Ex:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>// Ici le type de retour est implicitement `impl Future&lt;Output = u64&gt;`
-// Soit une &quot;structure qui est un future avec comme resultat un int de 64bits&quot;
-async fn demo() -&gt; u64 {
+<pre><code class="language-rust ignore">// Ici le type de retour est implicitement `impl Future&lt;Output = String&gt;`
+// Soit une &quot;structure qui est un future avec comme resultat un pointeur de texte&quot;
+async fn demo() -&gt; String {
 	// création et attente du resultat du future
 	let future1: u64 = Future1::new().await;
 	assert!(future1 == 10);
@@ -252,13 +242,12 @@ async fn demo() -&gt; u64 {
 	// création du future sans attendre le resultat
 	let future2 = Future2::new();
 
-	// retour implicite de la fonction
-	future2.await * 2 + future1
+	// attente du résultat et changement de type + retour implicite de la fonction
+	String::from(future2.await)
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>Cette syntaxe rend la combinatoire obselète car on travaille toujours avec les valeurs directement,
-permettant ainsi de les enchainer ou de modifier leur type de manière plus aisé.</p>
+permettant ainsi de les combiner ou de modifier leur type de manière plus aisé.</p>
 <h2><a class="header" href="#futuresstreamstream" id="futuresstreamstream"><code>futures::stream::Stream</code></a></h2>
 <p>Si un future est l'équivalent d'une promesse de valeur dans le temps, un <code>Stream</code> est lui
 l'équivalent d'une succession de valeur qui arrivent à la suite. Pour comprendre ce principe il
@@ -282,7 +271,7 @@ suivante.</p>
 }
 <span class="boring">}
 </span></code></pre></pre>
-<p>Tout comme les futures il y a un resultat (<code>Item</code>), un <code>Poll</code> et une reference à un <code>Context</code>.
+<p>Tout comme les futures il y a un resultat (<code>Item</code>), un <code>Poll</code> et une référence à un <code>Context</code>.
 Cependant pour determiner la fin d'un stream le language utilise un autre <em>enum</em> commun
 l'<code>Option&lt;T&gt;</code> qui prend (comme <code>Poll&lt;T&gt;</code>) une variante avec un objet (<code>Option::Some(T)</code>) et une sans
 (<code>Option::None</code>). Ainsi on peu faire une disjonction de cas:</p>
@@ -298,25 +287,25 @@ lorsque ce sera le cas.</li>
 Les principales sont:</p>
 <h5><a class="header" href="#next" id="next">Next</a></h5>
 <ul>
-<li><em>Ex</em>: <code>stream.next().await</code></li>
+<li><em>Ex</em>: <code>stream.next()</code></li>
 <li><em>Implication</em>: Produit un future qui se résout lorsque la prochaine valeur arrive ou le stream est
 terminé.</li>
 </ul>
-<h5><a class="header" href="#map-1" id="map-1">Map</a></h5>
+<h5><a class="header" href="#map" id="map">Map</a></h5>
 <ul>
 <li><em>Ex</em>: <code>stream.map(|val| { calcul(val) })</code></li>
-<li><em>Implication</em>: Produit un stream dont le type <code>Item</code> est modifié en un autre type R</li>
+<li><em>Implication</em>: Produit un stream ou tous les objets de type <code>Item</code> sont modifiés en un autre type</li>
 </ul>
 <h5><a class="header" href="#for-each" id="for-each">For Each</a></h5>
 <ul>
-<li><em>Ex</em>: <code>stream.for_each(|val| { calcul(val) }).await</code></li>
+<li><em>Ex</em>: <code>stream.for_each(|val| { calcul(val) })</code></li>
 <li><em>Implication</em>: Produit un future qui se résout lorsque toute les valeurs sont arrivées et ont été
 traitées.</li>
 </ul>
 <h5><a class="header" href="#filter" id="filter">Filter</a></h5>
 <ul>
-<li><em>Ex</em>: <code>stream.filter(|ref val| { val % 2 == 0 }).await</code></li>
-<li><em>Implication</em>: Produit un stream dont les éléments ou le calcul renvois <code>false</code> ne sont pas
+<li><em>Ex</em>: <code>stream.filter(|ref val| { val % 2 == 0 })</code></li>
+<li><em>Implication</em>: Produit un stream dont les éléments ou le calcul renvoit <code>false</code> ne sont pas
 retourné.</li>
 </ul>
 

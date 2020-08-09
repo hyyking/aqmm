@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr" class="sidebar-visible no-js coal">
+<html lang="fr" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -47,7 +47,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -73,7 +73,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('coal')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html" class="active"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Fonction de coût</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html" class="active"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -111,9 +111,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -163,16 +163,16 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#animateur-de-marché-automatisé" id="animateur-de-marché-automatisé">Animateur de marché automatisé</a></h1>
-<p>Les animateurs de marché automatisés sont des intermediaires contrepartistes toujours disponibles à
+<p>Les animateurs de marché automatisés sont des intermédiaires contrepartistes toujours disponibles à
 l'échange suivant une procédure automatique de formation du prix d'achat et de vente (qui peuvent
-être identiques). De cette manière aucun vendeur ou acheteur ne doit attendre l'arrivé d'une
-contrepartie eliminant une partie du problème de double coincidence des besoins. Evidemment, la
+être identiques). De cette manière, aucun vendeur ou acheteur ne doit attendre l'arrivé d'une
+contrepartie éliminant une partie du problème de double coincidence des besoins. Evidemment, la
 procédure automatique n'assure pas forcement un profit à l'organisateur mais assure un gain de
 liquidité non-négligeable sur certain marchés.</p>
 <p>Cette partie présente les fondements théoriques des animateurs de marché automatisés, avec dans un
-premier temps les propriétés désirables des fonctions de cout utilisé par les animateurs. Et enfin,
-nous présenterons l'expérience &quot;Gates Hillman Prediction Market&quot; menée par Abraham Othman et Tuomas
-Sandholm à la Carnegie Mellon University.</p>
+premier temps les propriétés désirables des fonctions de coût utilisées par les animateurs. Et
+enfin, nous présenterons l'expérience &quot;Gates Hillman Prediction Market&quot; menée par Abraham Othman et
+Tuomas Sandholm à la Carnegie Mellon University.</p>
 
                     </main>
 

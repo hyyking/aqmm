@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr" class="sidebar-visible no-js coal">
+<html lang="fr" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -47,7 +47,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -73,7 +73,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('coal')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Fonction de coût</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html" class="active"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html" class="active"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -111,9 +111,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -163,31 +163,32 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#protocol" id="protocol">Protocol</a></h1>
-<p>La communciation entre le serveur et les client se fait par message rpc encodé en protobuf, dans
-cette partie nous verrons les détails</p>
+<p>La communication entre le serveur et les client se fait par message rpc encodé en protobuf, dans
+cette partie nous verrons les détails.</p>
 <h2><a class="header" href="#remote-procedure-call-rpc" id="remote-procedure-call-rpc">Remote Procedure Call (RPC)</a></h2>
-<p>Le RPC est un protocole réseau permettant l'execution de taches sur un serveur depuis un client.
+<p>Le RPC est un protocole réseau permettant l'éxécution de taches sur un serveur depuis un client.
 Cette solution semble être bonne pour construire un marché ou les ordres sont demandé par le client
 et effectué par le serveur.</p>
 <p>Le client envois un premier une requête et bloque en attendant une réponse. Dans le cas de ce
-serveur le client à le choix entre 3 requete:</p>
+serveur le client à le choix entre 3 requêtes:</p>
 <ol>
-<li>Requete d'identification: permet au serveur de charger la session ou d'en créer une si elle
+<li>Requête d'identification: permet au serveur de charger la session ou d'en créer une si elle
 n'existe pas, la réponse contient l'identifiant de la session.</li>
-<li>Requete de la liste des titres: le serveur renvoie la liste des titres disponible avec une courte
-description.</li>
-<li>Requete d'ordres: le serveur execute et renvois le resultat des ordres.</li>
+<li>Requête de la liste des titres: le serveur renvoie la liste des titres disponible avec une courte
+description de chacuns.</li>
+<li>Requête d'ordres: le serveur execute et renvois le résultat des ordres.</li>
 </ol>
 <h2><a class="header" href="#protobuf" id="protobuf">Protobuf</a></h2>
 <p>Protocol Buffers est un format de sérialisation et de description d'interface développé par Google.
 Originellement conçut pour un nombre limité de languages nous utiliserons une implementation
-open-source pour le Rust appelé <a href="https://docs.rs/prost/0.6.1/prost/">prost!</a>.</p>
+open-source pour Rust appelé <a href="https://docs.rs/prost/0.6.1/prost/">prost!</a>.</p>
 <h3><a class="header" href="#language-de-description-dinterface" id="language-de-description-dinterface">Language de description d'interface</a></h3>
-<p>Les language de description d'interface permet de définir des composant de logiciel dans un language
-neutre de l'implementation de ce dernier. C'est à dire que si un fichier de description est partagé
-entre un serveur et un client, ils pourront être implémenté dans différents languages de
-programmation car ils auront la désecription des éléments pour désérialiser les données.</p>
+<p>Les language de description d'interface permettent de définir des composants de logiciel dans un
+language neutre de l'implementation de ce dernier. C'est à dire que si un fichier de description est
+partagé entre un serveur et un client, ils pourront être implémenté dans différents languages de
+programmation car ils auront la description des éléments pour désérialiser les données.</p>
 <p>Ex:</p>
+<p>Le protobuf</p>
 <pre><code class="language-protobuf">message Ordre {
 	uint64 qt = 1;
 	double prix = 2;
@@ -199,8 +200,14 @@ programmation car ils auront la désecription des éléments pour désérialiser
 	prix: f64,
 }
 </code></pre>
+<p>et en java:</p>
+<pre><code class="language-java ignore">public class Ordre {
+  int qt;
+  double prix;
+}
+</code></pre>
 <h3><a class="header" href="#sérialisationdésérialisation" id="sérialisationdésérialisation">Sérialisation/Désérialisation</a></h3>
-<p>La désérialisation est le fait de reduire une structure de donnée d'un programme en un ensemble
+<p>La désérialisation est le fait de réduire une structure de donnée d'un programme en un ensemble
 cohérent en binaire. La sérialisation, qui est l'inverse de la désérialisation, est le fait de créer
 un structure de donnée depuis un ensemble cohérent d'information binaire.</p>
 <p>Couplé ensemble ils permettent de stocker des structures de données dans des bases de données ou
@@ -211,8 +218,8 @@ informations de l'autre.</p>
 <p>Les clients se connectent via TCP (Transmission Control Protocol) pour emmettre les message RPC.</p>
 <p>Concernant les information de quantité sont relayé via un système de multicasting en UDP (User
 Datagram Protocol), c'est à dire un système ou le serveur envoie de la donnée à une adresse et les
-clients qui le souhaitent récupère la donnée sans que le serveur ai à entretenir une connection ou
-compter les personnes lisant les quantités. Le message protobuf envoyé est le message <code>Broadcast</code>.</p>
+clients qui le souhaite récupèrent la donnée sans que le serveur ai à entretenir une connection ou
+compter les personnes lisant les quantités. Auquel cas Le message protobuf envoyé est <code>Broadcast</code>.</p>
 <h2><a class="header" href="#protocol-entier" id="protocol-entier">Protocol entier</a></h2>
 <pre><code class="language-proto">syntax = &quot;proto3&quot;;
 

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr" class="sidebar-visible no-js coal">
+<html lang="fr" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -47,7 +47,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -73,7 +73,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('coal')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Fonction de coût</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html" class="active"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html" class="active"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -111,9 +111,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -166,50 +166,47 @@
 <p>Cette partie est l'extention de la partie précedente sur les <code>std::future::Future</code>, nous y
 expliquons le principe d'un executeur de future.</p>
 <h2><a class="header" href="#execution-dun-future" id="execution-dun-future">Execution d'un future</a></h2>
-<p>Comme vu precedement pour executer un future il faut un <code>Waker</code> permettant de se reveiller la tache.
-Cependant que veut dire reveiller la tache, dans le cadre des futures nous avons vu qu'il s'agit de
-rappeler <code>Futre::poll</code>. Cette tache est associé au concept de runtime dans d'autre language, en
-effet en python ou en go le language fait tourner un processus qui se charge d'executer les calculs
-asynchrones, ce processus est appelé &quot;runtime&quot;. Le language rust essayant de se maintenir à un bas
-niveau d'abstraction ne fournit pas un runtime, ainsi il s'agit de la tache du programmeur d'en
-utiliser/programmer un. Des exemples de runtimes sont <a href="https://docs.rs/tokio">tokio</a> et
-<a href="https://docs.rs/async-std">async-std</a>.</p>
+<p>Comme vu precedement pour executer un future il faut un <code>Waker</code> permettant de se réveiller la tache.
+Que veut dire réveiller une tache? Dans le cadre des futures nous avons vu qu'il s'agit de refaire
+appel à la méthode <code>poll</code>. Cette tache est associé au concept de &quot;runtime&quot;, ou unité d'éxécution,
+dans d'autres languages. En effet, en python ou en go le language fait tourner un processus qui se
+charge d'executer les calculs asynchrones, ce processus est appelé &quot;runtime&quot;. Le language rust
+essayant de se maintenir à un bas niveau d'abstraction ne fournit pas un runtime, ainsi il s'agit de
+la tache du programmeur d'en utiliser/programmer un. Des exemples de runtimes rust sont
+<a href="https://docs.rs/tokio">tokio</a> et <a href="https://docs.rs/async-std">async-std</a>.</p>
 <h2><a class="header" href="#bloquer-sur-un-future" id="bloquer-sur-un-future">Bloquer sur un future</a></h2>
 <p>Comme il n'y a pas de runtime en language rust il faut la capacité de bloquer sur un futur à
 l'origine des autres. Pour se faire un peu utiliser les capacité du système d'opération pour bloquer
 les processus et ainsi ne pas créer un boucle qui attend que le future se termine avec un context
 finalement inutile. Un <a href="https://stjepang.github.io/2020/01/25/build-your-own-block-on.html">exemple</a>
 minimaliste d'une telle fonction est le suivant:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>fn block_on&lt;F: Future&gt;(future: F) -&gt; F::Output {
+<pre><code class="language-rust ignore">fn block_on&lt;F: Future&gt;(future: F) -&gt; F::Output {
     pin_utils::pin_mut!(future); // pour avoir un Pin&lt;&amp;mut Self&gt; pour le future
 
-    let parker = crossbeam::Parker::new();
+    let parker = crossbeam::Parker::new(); // permet de mettre en pause le processus
     let unparker = parker.unparker().clone();
-    let waker = async_task::waker_fn(move || unparker.unpark());
+    let waker = async_task::waker_fn(move || unparker.unpark()); // Création du Waker qui réveil le processus
 
-    let cx = &amp;mut Context::from_waker(&amp;waker);
+    let cx = &amp;mut Context::from_waker(&amp;waker); // création du contexte à partir du Waker
     loop {
         match future.as_mut().poll(cx) {
             Poll::Ready(output) =&gt; return output,
-            Poll::Pending =&gt; parker.park(),
+            Poll::Pending =&gt; parker.park(), // mise en pause du processus si la valeur n'est pas prète en attendant le reveil
         }
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>Cette exemple utilise deux librairies (<code>crossbeam</code> et <code>async-task</code>) mais montre bien le processus
 d'execution. Tant que le future n'est pas terminé on appel <code>Future::poll</code>, s'il ne se termine pas on
-parque le processus sur l'os et on attend d'etre reveillé par le waker qui va l'<code>unpark</code>.</p>
+parque le processus sur le système d'opération et on attend d'etre reveillé par le waker qui va le
+remettre en execution.</p>
 <h2><a class="header" href="#execution-asynchrone" id="execution-asynchrone">Execution asynchrone</a></h2>
-<p>Sur l'exemple si dessus nous avons trouvé un moyen d'attendre le resultat d'un future sans executer
+<p>Sur l'exemple si dessus nous avons trouvé un moyen d'attendre le resultat d'un future sans éxécuter
 la boucle constamment (en parquant le processus). Cependant parfois on souhaite qu'un future soit
 executé sans se soucier du resultat et ce de manière asynchrone. La plupart des runtime ont une
-commande pour <code>spawn</code> un future qui sera executé par un ensemble de processus, souvent en utilisant
-un systeme de vol de taches pour maintenir la bonne répartition de ces dernières à travers les
-differents processus.</p>
+commande pour <code>spawn</code> un future qui sera éxécuté par un ensemble de processus sans bloquer sur une
+tache en particulier. Souvent les runtimes utilisent un systeme de vol de taches pour maintenir la
+bonne répartition de ces dernières à travers les differents processus.</p>
 <p>En étendant sur l'exemple précedent:</p>
 <pre><pre class="playground"><code class="language-rust">// Liste des taches
 static QUEUE: Vec&lt;Task&gt; = Vec::new();

@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html lang="fr" class="sidebar-visible no-js coal">
+<html lang="fr" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Fonction de coût - Projet CMI L3 - A Quick Marker Maker (aqmm)</title>
+        <title>Mesure du risque - Projet CMI L3 - A Quick Marker Maker (aqmm)</title>
         
         
 
@@ -47,7 +47,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -73,7 +73,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('coal')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html" class="active"><strong aria-hidden="true">1.1.</strong> Fonction de coût</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html" class="active"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -111,9 +111,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -162,32 +162,37 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#fonction-de-coût" id="fonction-de-coût">Fonction de coût</a></h1>
-<p>Le but des anmateurs automatisés est de determiner un prix juste en utilisant les informations des
+                        <h1><a class="header" href="#mesure-du-risque" id="mesure-du-risque">Mesure du Risque</a></h1>
+<p>Le but des animateurs automatisés est de déterminer un prix juste en utilisant les informations des
 agents sur le marché, lui meme étant non-informé.</p>
 <h2><a class="header" href="#règle-de-score-de-marché" id="règle-de-score-de-marché">Règle de score de marché</a></h2>
-<p>Tout d'abord nous definissons une règle de score. Considerons deux variables aléatoires \(Y: \Omega
-\mapsto X\) et \(G: \Omega \mapsto Z\) ou respectivement \(Y\) et \(G\) sont les probabilités
-visées par l'estimation et les probabilité générés par l'estimation. Une fonction de score est
-définit par \(S: Y \times G \mapsto \mathbb{R}\). Autrement dit il s'agit d'une fonction
+<p>Tout d'abord nous définissons une règle de score. Considérons deux variables aléatoires \(Y: \Omega
+\mapsto X\) et \(G: \Omega \mapsto Z\), ou respectivement \(Y\) et \(G\) sont les
+probabilités visées par l'estimation et les probabilité générés par l'estimation. Une fonction de
+score est définit par \(S: Y \times G \mapsto \mathbb{R}\). Autrement dit il s'agit d'une fonction
 mathématique associant à un ensemble de probabilités estimés un nombre que l'on peut interpreter
 comme la &quot;justesse&quot; de l'approximation. On considère que le point qui minimise la fonction de score
-est celui ou les probabilités se rapproche le de l'evennement réel.</p>
-<p>Avec une règle de score, les agent rapportent leurs probabilités pour chaque evennement et recoivent
+est celui ou les probabilités se rapproche le de l'évènement réel.</p>
+<p>Avec une règle de score, les agent rapportent leurs probabilités pour chaque évènement et recoivent
 un paiement selon chaque réalisation. Une règle de score de marché est une règle de score ou tout le
-monde peut changer ses choix à chaque instant et recevoir un paiement dependant du dernier paiement.
-Le cout induit par la règle de score de marché est celui du dernier rapport comparé au premier. Dans
-<a href="https://mason.gmu.edu/%7Erhanson/mktscore.pdf">Hanson (2002)</a> l'auteur montre que toute fonction de
-score rapportant des probabilités honnètes peut être utilisé comme fonction de score de marché.</p>
+monde peut changer ses choix à chaque instant et recevoir un paiement dependant de son estimation
+finale. Le cout induit par la règle de score de marché est celui de la dernière estimation
+rapportée, comparée à la première. Dans <a href="https://mason.gmu.edu/%7Erhanson/mktscore.pdf">Hanson (2002)</a>
+l'auteur montre que toute fonction de score rapportant des probabilités honnètes peut être utilisé
+comme règle de score de marché.</p>
 <h2><a class="header" href="#animateurs-de-marché-à-fonction-de-score" id="animateurs-de-marché-à-fonction-de-score">Animateurs de marché à fonction de score</a></h2>
-<p>Nous decrivons désormais le déroulement des échanges avec un animateur de marché automatique à
+<p>Nous décrivons désormais le déroulement des échanges avec un animateur de marché automatique à
 fonction de score. Ce dernier commence avec un état initiale (généralement \(\vec{0}\)). Les
 agents interagissent avec l'animateur en modifiant son état interne de \(x\) à \(x'\) pour un
-prix de \(C(x') - C(x)\). Par exemple pour des evennement \(\omega_1\) et \(\omega_2\) et un
-état initial de \(\{0, 0\}\) si un agent souhaite acheter deux titres associés à \(\omega_2\)
-il devra d'affranchir de \(C(\{0, 0 + 2\}) - C(\{0, 0\})\). Ainsi on peut qualifier le prix
-d'un actif comme le gradient de la fonction de score par rapport à cet actif.</p>
+prix de \(C(x') - C(x)\). Par exemple pour des évènement indépendants et complémentaires
+\(\omega_1\) et \(\omega_2\) et un état initial de \(\{0, 0\}\) si un agent souhaite acheter
+deux titres associés à \(\omega_2\) il devra d'affranchir de \(C(\{0, 0 + 2\}) - C(\{0,
+0\})\). Ainsi on peut qualifier le prix d'un actif comme le gradient de la fonction de score par
+rapport à cet actif.</p>
 <h2><a class="header" href="#propriétés-désirables-des-fonctions-de-score-de-marché" id="propriétés-désirables-des-fonctions-de-score-de-marché">Propriétés désirables des fonctions de score de marché</a></h2>
+<p>Il existe un ensemble de propriété désirables pour ces règle de score, en effet on aimerait limiter
+la perte d'un animateur de marché et proposer des prix cohérents. On liste cinqs propriétés
+désirables:</p>
 <h4><a class="header" href="#1-monotonie" id="1-monotonie">1. Monotonie</a></h4>
 <p>\[\forall x,y \space s.t. \space x_i \le y_i, \space C(x) \le C(y)\]</p>
 <p>Interprétation: le prix marginal d'un ordre ne décroit jamais, empechant d'acheter des combinaisons
@@ -203,12 +208,37 @@ cela incite à la diversification des portfeuilles.</p>
 réalisés.</p>
 <h4><a class="header" href="#4-invariance-à-la-translation" id="4-invariance-à-la-translation">4. Invariance à la translation</a></h4>
 <p>\[\forall \vec{x},\alpha \] \[C(x + \vec{1} \alpha) = C(x) + \alpha \]</p>
-<p>Interprétation: Si on paris \(\alpha\) unités sur tous les états on paie \(\alpha\) unités.</p>
+<p>Interprétation: Si on pari \(\alpha\) unités sur tous les états on paie \(\alpha\) unités.</p>
 <h4><a class="header" href="#5-homogénéité-positive" id="5-homogénéité-positive">5. Homogénéité positive</a></h4>
 <p>\[\forall \vec{x},\gamma \gt 0\] \[C(x \gamma) = C(x) \gamma \]</p>
-<p>Interprétation: Si on double son paris on paie double.</p>
-<h2><a class="header" href="#exemple-de-fonction-de-score" id="exemple-de-fonction-de-score">Exemple de fonction de score</a></h2>
-<p>...</p>
+<p>Interprétation: Si on double son pari on paie double.</p>
+<h2><a class="header" href="#impossibilité-du-résultat" id="impossibilité-du-résultat">Impossibilité du résultat</a></h2>
+<p>D'après ces propriétés il est possible de prouver qu'il n'existe qu'une fonction qui les statisfait
+toutes et il s'agit de la fonction de score max:</p>
+<p>\[ C(x) = \max_{x_i} x\]</p>
+<p>Cependant cette fonction implique qu'il est gratuit de déplacer l'animateur de marché d'un état
+\(\{1, 0\}\) à l'état \(\{1, 1\}\). En pratique il s'agit d'une mauvaise mesure du risque et
+ainsi il est impossible de satisfaire toutes ces propriétés.</p>
+<p>Pour diminuer la restriction on enlève généralement soit l'homogénéité positive ou l'invariance à la
+translation. La fonction présentée dans la partie suivante satisfait les 4 premières propritétés.</p>
+<h2><a class="header" href="#règle-de-score-de-marché-logarithmique-logarithmic-market-scoring-rule" id="règle-de-score-de-marché-logarithmique-logarithmic-market-scoring-rule">Règle de score de marché logarithmique (Logarithmic Market Scoring Rule)</a></h2>
+<p>Définition:</p>
+<p>\[ C(x) = b\log{\sum_i{\exp(x_i/b)}} \]</p>
+<p>\[ p_i(x) = {\exp(q_i/b) \over {\sum_k \exp(q_k/b)}} \]</p>
+<p>La règle de score logarithmique a été introduite par Hanson elle est lié à un paramètre \(b\) qui
+influe sur la liquidité (illustration ci- dessous). Elle à l'avantage de garantire l'indépendance
+des effets liés aux actions des individus. En effet, lorsqu'un individu fait un pari sur un
+évènement A lié à un évènement B alors l'estimation de probabilité lié à l'autre évènement n'est pas
+modifié. Cette fonction est particulièrement utile pour les marchés combinatoires.</p>
+<p>Le paramètre \(b\) influe négativement sur le gradient, si on compare graphiquement un \(b=0.2\)
+et \(b=1000\) on observe que sur le premier graphique le score le plus haut est atteint beaucoup
+plus rapidement avec une &quot;valée&quot; des paris diversifiés ou le score monte plus lentement. Sur le
+second graphique le plan est quasiment plat est les valeurs les plus hautes sont atteinte seulement
+lors des plus grandes combinaisions autour (10, 10). Ainsi le paramètre \(b\) influe sur la
+liquidité car un \(b\) faible permet d'inciter un report équitable des probabilités avec un score
+plus elevé pour les ajouts unilatéraux réduisant ainsi le nombre potentiels de personnes sur le
+marché.</p>
+<p><img src="../img/lsmr_b0.2.png" alt="b0.2" /> <img src="../img/lsmr_b1000.png" alt="b0.2" /></p>
 
                     </main>
 

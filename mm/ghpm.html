@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr" class="sidebar-visible no-js coal">
+<html lang="fr" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -47,7 +47,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -73,7 +73,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('coal')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -92,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Fonction de coût</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html" class="active"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Théorie</li><li class="chapter-item expanded "><a href="../mm/intro.html"><strong aria-hidden="true">1.</strong> Animateur de marché automatisé</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../mm/costfn.html"><strong aria-hidden="true">1.1.</strong> Mesure du risque</a></li><li class="chapter-item expanded "><a href="../mm/ghpm.html" class="active"><strong aria-hidden="true">1.2.</strong> Gates Hillman Prediction Market</a></li></ol></li><li class="chapter-item expanded "><a href="../async/intro.html"><strong aria-hidden="true">2.</strong> Programmation Asynchrone</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../async/futures.html"><strong aria-hidden="true">2.1.</strong> &quot;Future&quot; en language Rust</a></li><li class="chapter-item expanded "><a href="../async/executor.html"><strong aria-hidden="true">2.2.</strong> Executeur</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><li class="part-title">Pratique</li><li class="chapter-item expanded "><a href="../app/intro.html"><strong aria-hidden="true">3.</strong> Structure de l'application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../app/protocol.html"><strong aria-hidden="true">3.1.</strong> Protocol</a></li><li class="chapter-item expanded "><a href="../app/server.html"><strong aria-hidden="true">3.2.</strong> Serveur</a></li><li class="chapter-item expanded "><a href="../app/clients.html"><strong aria-hidden="true">3.3.</strong> Clients</a></li></ol></li><li class="chapter-item expanded "><a href="../server/intro.html"><strong aria-hidden="true">4.</strong> Serveur</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../server/executor.html"><strong aria-hidden="true">4.1.</strong> Executeur à un thread</a></li><li class="chapter-item expanded "><a href="../server/io.html"><strong aria-hidden="true">4.2.</strong> Ressources I/O</a></li><li class="chapter-item expanded "><a href="../server/market.html"><strong aria-hidden="true">4.3.</strong> Marché</a></li></ol></li><li class="chapter-item expanded "><a href="../result/intro.html"><strong aria-hidden="true">5.</strong> Experience</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../result/setup.html"><strong aria-hidden="true">5.1.</strong> Mise en place</a></li><li class="chapter-item expanded "><a href="../result/strategies.html"><strong aria-hidden="true">5.2.</strong> Stratégies</a></li><li class="chapter-item expanded "><a href="../result/results.html"><strong aria-hidden="true">5.3.</strong> Résultats</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../conclusion.html">Conclusion</a></li><li class="chapter-item expanded affix "><a href="../documentation.html">Documentation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -111,9 +111,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -163,6 +163,82 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#gates-hillman-prediction-market" id="gates-hillman-prediction-market">Gates Hillman Prediction Market</a></h1>
+<p>L'expérience du Gates Hillman Prediction Market (GHPM) est un exemple de marché de l'information ou
+les individus échangent sur les probabilités d'un évènement, en l'occurence l'ouverture du centre
+Gates-Hillman à l'université Carnegie-Mellon. Menée par Abraham Othman et Tuomas Sandholm,
+l'expérience aura duré un an avec 169 individus actifs pour 210 inscrits.</p>
+<h2><a class="header" href="#mise-en-place" id="mise-en-place">Mise en place</a></h2>
+<p>Un problème lié à la mise en place de marchés de l'information est la définition exacte des
+évènements de tel sorte que l'on sache si ils se sont réalisés. En effet par le mot ouverture on
+pourrait penser à la fin des travaux comme à l'enménagement complet du personnel. La définition vers
+laquelle s'est tendu l'experience est &quot;lorsque 50% de l'espace occupable aura reçu son permis
+d'exploitation&quot; qui est un élément aisément vérifiable administrativement.</p>
+<p>Afin qu'assez d'invidus participent au marché les organisateurs ont recolté un prix pour le tirage
+au sort final pondéré par le nombre d'actifs de chaque participant. Deplus, les participants
+recevaient 20 tickets gratuits lors de l'inscription et 2 tickets par semaine s'ils étaient actifs.</p>
+<h2><a class="header" href="#fonctionnement" id="fonctionnement">Fonctionnement</a></h2>
+<p>Le GHPM utilisait une fonction de score de marché logarithmique avec un paramètre \(b=32\). Afin
+de pouvoir parier sur une date, il a fallu trouver un manière en trois temps de faire l'échange. En
+effet, en premier les paris étaient eux formulés sur un interval de temps plutot que sur des jours
+uniques car les individus ont du mal à raisonner sur des probabibilités faibles (Ali, 1977). Dans
+cette même requète les individus indiquaient un montant à parier. Ensuite, l'animateur de marché
+proposait deux contrats &quot;pour&quot; et &quot;contre&quot; indiquant le montant gagné et la probabilité associée.
+Enfin l'utilisateur choisissait un contrat et recevait le montant de ticket désignait si au cours de
+la période l'évènement selectionné s'était réalisé.</p>
+<p><img src="../img/ghpm_bet.png" alt="ghpm image" /></p>
+<p>^ Capture d'écran de l'interface.</p>
+<p>Les montants gagné \( \pi_j\) pour une période \([i, j]\) étaient calculés selon les équations
+qui satisfont l'invariance à la translation pour le pari \(r\):</p>
+<ul>
+<li>Les paris &quot;pour&quot;: \[ C(q_1, ..., q_i + \pi_j, ... + \pi_j, q_j + \pi_j, ...) = C(q) + r\]</li>
+<li>Les paris &quot;contre&quot;: \[ C(q_1 + \pi_j, ... + \pi_j, q_i, ... , q_j, ...+ \pi_j) = C(q) + r\]</li>
+</ul>
+<p>La résolution des équations était faite en utilisant la
+<a href="https://en.wikipedia.org/wiki/Newton%27s_method">méthode de newton</a> et donc approximée.</p>
+<h2><a class="header" href="#résultats" id="résultats">Résultats</a></h2>
+<p>Dans cette section nous présentons les problèmes revélés par l'experience et les stratégies qui s'en
+sont suivis.</p>
+<h3><a class="header" href="#pics-de-prix" id="pics-de-prix">Pics de prix</a></h3>
+<p>Un des problèmes principaux qui est apparu lors de l'experience du GHPM est l'apparition de pics de
+prix, en effet on pouvait observer une grande difference de prix sur deux jours différents comme le
+montre le graphique ci-dessous tiré du papier originel:</p>
+<p><img src="../img/spikes.png" alt="spikes image" /></p>
+<p>Ce problème trouve un fondement théorique, une règle de score ne produisant pas de pics doit
+satisfaire la contrainte:</p>
+<p>\[ \lim_{p_i \to 0} {\delta q \over \delta q^2_i} p_i(q_i, q_{-i}) \le 0 \]</p>
+<p>Qui indique que le prix doit être concave par rapport aux quantités. Le papier présente une preuve
+expliquant qu'une règle de score libre (opposé à une règle de score borné manuellement) ne peut pas
+satisfaire cette contrainte. L'inconvénient des règle de score borné manuellement viendrait d'une
+implémentation plus complexe informatiquement et donc moins efficace.</p>
+<p>Lors de l'expérience cet effet à eu un impact sur la stratégie des agents. Les chercheurs ont mené
+des interviews avec certains utilisateur, lors d'une de ces interviews une personne admet avoir
+suivis ces pics afin de parier contre car selon lui ils venait d'une mauvaise estimation de la part
+des autres agents qui avait parié sur des périodes très courtes, de cette manière une fois les
+périodes surestimés passés il gagnait ses paris.</p>
+<h3><a class="header" href="#insensibilité-à-la-liquidité" id="insensibilité-à-la-liquidité">Insensibilité à la liquidité</a></h3>
+<p>En utilisant la fontion LMSR, l'animateur de marché satisfait l'invariance à la translation et ainsi
+produit les mêmes variation de prix peut importe la quantité d'actifs présents sur le marché, ce qui
+est contre-intuitif lorsque l'on pense aux marchés en pratique. Cette proprieté permet d'eviter les
+opportunités d'arbitrage mais accentue les effets marginaux sur des marchés &quot;profonds&quot;, avec un
+grand nombre d'actifs disponibles.</p>
+<p>Cet effet à eu un impact négatif sur l'experience, notamment sur la fin, car les agents avait peur
+de faire des mouvements plus gros qui auraient pu faire basculer la valeur de leur portefeuille.
+D'après une interveiw vers la fin de l'expérience une des personnes les mieux placés a essayé de
+limiter ses placement afin de justement eviter de former des pics liés à cet insensibilité à la
+liquidité.</p>
+<p>Une solution à ce problème est exploré dans le papier <em>A Practical Liquidity-Sensitive Automated
+Market Maker</em> par A. Othman et D. Pennock.</p>
+<h2><a class="header" href="#estimation" id="estimation">Estimation</a></h2>
+<p>Les estimations du GHPM sont présentés par ce graphique tiré du papier.</p>
+<p><img src="../img/ghpm_estimate.png" alt="Estimation du ghpm" /></p>
+<p>Une observe une convergence des estimations plus la veritable date approchait, la convergence touche
+tous les pourcentiles. A partir de Février, lors d'une seconde annonce officielle la période
+d'ouverture était plus ou moins connu et on observe que des petites variations à partir de ce moment
+la alors que les annonces suivantes en Juillet on amélioré la prédiction jusqu'à la date d'ouverture
+alors que la tendance prévoyait une période un peu plus longue.</p>
+<p>Le graphique suivant présente la masse de personnes ayant eu un iterval correct en fonction des mois
+où le marché était ouvert.</p>
+<p><img src="../img/ghpm_pb.png" alt="Pb ghpm" /></p>
 
                     </main>
 
