@@ -5,6 +5,7 @@ fish -c "fmtmd **.md"
 
 echo "====> deploying to github"
 
+git worktree remove "/tmp/book"
 git worktree add "/tmp/book" "gh-pages"
 
 rm -rf /tmp/book/*
@@ -14,5 +15,3 @@ cd /tmp/book && \
 	git add -A && \
 	git commit -m "deployed by ${USER}" && \
 	git push origin gh-pages
-
-git worktree remove "/tmp/book"

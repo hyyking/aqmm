@@ -1,8 +1,12 @@
 # Documentation
-
-- A Bayesian Market Maker
-- A Practical Liquidity-Sensitive Automated Market Maker
-- Algorithmic Game Theory
-- Automated Market Making: Theory and Practice
-- Logarithmic Market Scoring Rules for Modular Combinatorial Information Aggregation
-- Multi-outcome and Multidimensional Market Scoring Rules
+- A Practical Liquidity-Sensitive Automated Market Maker - A. Othman, T. Sandholm, D. Pennock, D. Reeves (2010)
+- Automated Market Making: Theory and Practice - A. Othman (2012)
+- Betting on Permutations - Y. Chen, D. Pennock (2005)
+- Complexity of Market Making - Y.Chen, D. Pennock (2008)
+- Computational Aspects of Prediction Markets - D. Pennock, R. Sami
+- Gates Hillman Prediction Market - A. Othman, T. Sandholm (2010)
+- Logarithmic Market Scoring Rules for Modular Combinatorial Information Aggregation - R. Hanson (2002)
+- Market vs Pool - Y. Chen, D. Pennock (2005)
+- Multi-outcome and Multidimensional Market Scoring Rules - L. Fortnow, R. Sami (2012)
+- Prediction Markets: Economics, Computation, and Mechanism Design - Y. Chen (2007)
+- The Hidden Beauty of the Quadratic Market Scoring Rule: A Uniform Liquidity Market Maker, with Variations - M. Abramowicz (2007)
