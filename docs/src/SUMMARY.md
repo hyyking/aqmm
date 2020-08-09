@@ -8,7 +8,7 @@
 
 - [Animateur de marché automatisé](mm/intro.md)
 
-  - [Fonction de coût](mm/costfn.md)
+  - [Mesure du risque](mm/costfn.md)
   - [Gates Hillman Prediction Market](mm/ghpm.md)
 
 - [Programmation Asynchrone](async/intro.md)

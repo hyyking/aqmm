@@ -7,8 +7,7 @@ title = "Projet CMI L3 - A Quick Marker Maker (aqmm)"
 
 [output.html]
 mathjax-support = true
-default-theme = "coal"
-preferred-dark-theme = "coal"
+default-theme = "light"
 git-repository-url = "https://github.com/hyyking/aqmm"
 git-repository-icon = "fa-github"
 site-url = "hyyking.github.com/aqmm"

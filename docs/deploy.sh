@@ -14,3 +14,5 @@ cd /tmp/book && \
 	git add -A && \
 	git commit -m "deployed by ${USER}" && \
 	git push origin gh-pages
+
+git worktree remove "/tmp/book"

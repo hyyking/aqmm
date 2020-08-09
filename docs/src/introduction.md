@@ -6,9 +6,9 @@ au problème de double coincidence des besoins notamment sur les marchés peu li
 contourner ce problème est de passer par un intermédiaire.
 
 Ce dernier peu mettre en relation les ordres de ses differents clients ou trouver des contre-parties
-comme c'est le cas avec les courties. Ou bien, Les intermédiaires peuvent également se porter eux
-même comme contre-partis et ainsi prendre les ordres, gérant ainsi leur propre portefeuille créant
-ainsi de la liquidité sur le marché. C'est actuellement le cas sur le _NASDAQ_ ou le _NYSE_ avec des
+comme c'est le cas avec les courtiers. Les intermédiaires peuvent également se porter eux même comme
+contre-partie et ainsi prendre les ordres, gérant ainsi leur propre portefeuille créant ainsi de la
+liquidité sur le marché. C'est actuellement le cas sur le _NASDAQ_ ou le _NYSE_ avec des
 spécialistes qui gèrent leur portefeuille et proposent des prix plus justes que les agents non
 spécialisés. Cela permet, sur les marchés peu liquides, de réduire le tatonnement vers le prix
 d'équilibre et ainsi augmenter le nombres d'échanges.
@@ -23,5 +23,5 @@ marché entièrement liquide.
 
 Ce projet présente une implémentation d'un animateur de marché automatisé. Dans une première partie
 nous nous interesserons aux fondements théoriques des animateurs de marchés et à la programmation
-asynchrone. Tandis que dans un second temps nous présenterons l'architecture, l'implementation et
-les resultats de l'application.
+asynchrone. Tandis que dans un second temps nous présenterons l'architecture, l'implémentation et
+les résultats de l'application.
