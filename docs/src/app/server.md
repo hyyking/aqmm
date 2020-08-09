@@ -51,12 +51,12 @@ des ressources I/O et d'emettre des notifications sur les connections ayant du t
 message des clients ces messages sont ensuite décodés et une réponse est envoyé suviant le protocole
 décrit dans la partie précédente.
 
-## Networking
+## Réseau
 
 Le module `src/net` contient tous les éléments nécéssaire au maintient et à l'utilisation des
 connections.
 
-### TcpSream
+### Stream Tcp Asynchrone
 
 Le driver de ressources I/O permet de savoir quand une connection est en mesure d'être écrite/lu. De
 cette manière le driver peut reveiller les `Waker` associés. Il manque donc deux _trait_ comme
@@ -68,10 +68,11 @@ I/O nous pouvons construire une abstraction par dessus un TcpStream synchrone qu
 
 ### Codec
 
-Les codecs sont construits sur les _traits_ `tokio_util::codec::Encoder` et
+Les codecs sont des structures construites sur les _traits_ `tokio_util::codec::Encoder` et
 `tokio_util::codec::Decoder` trouvé dans la librairie [`tokio_util`](https://docs.rs/tokio_codec).
-Le module expose un codec client, qui encode des requêtes et décode des réponses ainsi qu'un codec
-serveur qui encode les réponses et décode les requètes.
+Il permettent de lier l'utilisation de zone mémoire tampon avec l'encodage et le décodage de
+messages. Le module expose un codec client, qui encode des requêtes et décode des réponses ainsi
+qu'un codec serveur qui encode les réponses et décode les requètes.
 
 L'interet d'exposer ces codec est de pouvoir utiliser la structure `tokio_util::codec::Framed`
 exposé par la même libraire. La structure permet de créer un stream et un "sink" depuis un codec
@@ -79,7 +80,7 @@ exposé par la même libraire. La structure permet de créer un stream et un "si
 (`AsyncRead + AsyncWrite`). Le stream renvois ainsi les objets décodés et le "sink" permet d'envoyer
 des objets qui seront encodés puis envoyés sur la connection.
 
-## Market
+## Marché
 
 Le marché est composé de plusieurs éléments. La structure principale qui sert de pointeur vers un
 état partagé qui comprend une liste des coeurs du marché et un accès au routeur d'ordres. Tous les
@@ -89,7 +90,7 @@ ainsi qu'un accès au multicast.
 Le but de cette structure est de servire d'interface partagé entre tous les clients pour envoyer des
 ordres en contrepartie d'un future sur le résultat de cet ordre.
 
-### Router/Coeurs
+### Routeur et coeurs du marché
 
 Le router d'ordre est un structure faisant part du marché son but est d'envoyer les ordres sur les
 différents coeurs. Les stratégies de routage des ordres peuvent être plus ou moins complexe. En
@@ -103,15 +104,15 @@ coeurs ne soient actifs que lorsque des ordres arrivent (et ainsi les notifiants
 
 Le coeur du marché est lancé sur un processus différent, il s'agit d'une structure asynchrone qui
 attend les ordres du router. Une fois l'ordre reçu il tente attend de pouvoir avoir un accès
-exclusifs aux quantités actuelles de l'animateur de marché. Une fois les quantités acquises il
-calcule le score pour les anciennes et le score pour les nouvelles après avoir éxécuté tous les
-ordres determinant le prix de la transaction. Une fois le verrous des quantités levé il tente de
-partager les nouvelles quantités, cette action échouera si les quantités ont été partagé trop
-récemment.
+exclusifs (via un [Mutex](https://en.wikipedia.org/wiki/Mutual_exclusion)) aux quantités actuelles
+de l'animateur de marché. Une fois les quantités acquises il calcule le score pour les anciennes et
+le score pour les nouvelles après avoir éxécuté tous les ordres determinant le prix de la
+transaction. Une fois le verrous des quantités levé il tente de partager les nouvelles quantités,
+cette action échouera si les quantités ont été partagé trop récemment.
 
-### Securities/Pool
+### Titres
 
-Le fichier `src/market/securities.rs` permet d'editer les titres avant la compilation et contient
+Le fichier `src/market/securities.rs` permet d'éditer les titres avant la compilation et contient
 également des fonctions y facilitant l'accès. Le fichier définit également un autre type
 `Securities` dont la description est du texte statique car il est, pour le moment, impossible de
 créer statiquement (comprendre lors de la compilation) un pointeur de texte `String` requis par

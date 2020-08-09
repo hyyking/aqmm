@@ -23,5 +23,5 @@ marché entièrement liquide.
 
 Ce projet présente une implémentation d'un animateur de marché automatisé. Dans une première partie
 nous nous interesserons aux fondements théoriques des animateurs de marchés et à la programmation
-asynchrone. Tandis que dans un second temps nous présenterons l'architecture, l'implémentation et
-les résultats de l'application.
+asynchrone. Tandis que dans un second temps nous présenterons l'architecture et l'implémentation du
+serveur de marché.

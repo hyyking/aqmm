@@ -55,7 +55,7 @@ et en java:
 
 ```java, ignore
 public class Ordre {
-  int qt;
+  long qt;
   double prix;
 }
 ```

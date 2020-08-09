@@ -80,7 +80,7 @@ grand nombre d'actifs disponibles.
 
 Cet effet à eu un impact négatif sur l'experience, notamment sur la fin, car les agents avait peur
 de faire des mouvements plus gros qui auraient pu faire basculer la valeur de leur portefeuille.
-D'après une interveiw vers la fin de l'expérience une des personnes les mieux placés a essayé de
+D'après une interview, vers la fin de l'expérience une des personnes les mieux placés a essayé de
 limiter ses placement afin de justement eviter de former des pics liés à cet insensibilité à la
 liquidité.
 

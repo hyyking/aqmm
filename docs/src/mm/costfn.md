@@ -35,7 +35,7 @@ rapport à cet actif.
 ## Propriétés désirables des fonctions de score de marché
 
 Il existe un ensemble de propriété désirables pour ces règle de score, en effet on aimerait limiter
-la perte d'un animateur de marché et proposer des prix cohérents. On liste cinqs propriétés
+la perte d'un animateur de marché et proposer des prix cohérents. On liste cinq propriétés
 désirables:
 
 #### 1. Monotonie

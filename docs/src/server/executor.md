@@ -1,1 +1,0 @@
-# Executeur à un thread
