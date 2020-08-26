@@ -1,0 +1,27 @@
+[package]
+name = "palpatine"
+version = "0.1.0"
+authors = ["hyyking <leoduret@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[example]]
+name = "test"
+path = "test.rs"
+
+
+[dependencies]
+slab = "0.4.2"
+futures-io = "0.3.5"
+async-task = "3.0"
+parking_lot = "0.11.0"
+
+[dependencies.mio]
+version = "0.7"
+features = ["tcp", "os-poll"]
+default-features = false
+
+[dependencies.futures-util]
+version = "0.3"
+features = ["std"]
+default-features = false
